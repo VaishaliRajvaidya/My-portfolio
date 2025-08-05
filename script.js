@@ -1,11 +1,4 @@
-
-  document.querySelectorAll('.info-section').forEach(section => {
-    section.style.display = 'none';
-  });
-  document.getElementById(sectionId).style.display = 'block';
-
-
-// Navbar toggle for mobile
+// Toggle navbar on mobile
 document.getElementById('menuToggle').addEventListener('click', () => {
   document.getElementById('navLinks').classList.toggle('show');
 });
@@ -34,7 +27,7 @@ gsap.from(".intro-text", {
 
 // Toggle info sections
 function toggleSection(sectionId) {
-  const sections = ["about", "projects", "contact"];
+  const sections = ["about", "projects", "skills", "experience", "resume", "contact"];
   sections.forEach(id => {
     const el = document.getElementById(id);
     if (id === sectionId) {

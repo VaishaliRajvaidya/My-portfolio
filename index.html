@@ -15,9 +15,12 @@
         <h1 class="brand-name">Vaishali</h1>
       </div>
       <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" onclick="toggleSection('about')">About</a>
+        <a href="#projects" onclick="toggleSection('projects')">Projects</a>
+        <a href="#skills" onclick="toggleSection('skills')">Skills</a>
+        <a href="#experience" onclick="toggleSection('experience')">Experience</a>
+        <a href="#resume" onclick="toggleSection('resume')">Resume</a>
+        <a href="#contact" onclick="toggleSection('contact')">Contact</a>
         <a href="resume/VaishaliRajvaidya.pdf" class="resume" download>Download Resume</a>
       </div>
       <div class="menu-toggle" id="menuToggle"><i class="ri-menu-line"></i></div>
@@ -25,7 +28,6 @@
   </header>
 
   <div class="page1">
-    <!-- Updated Intro Section -->
     <div class="intro-section">
       <div class="profile-pic-container">
         <img src="photo.jpg" class="profile-image" alt="Vaishali Rajvaidya Profile Picture"/>
@@ -37,7 +39,6 @@
     </div>
   </div>
 
-  <!-- Card Section -->
   <div class="page2">
     <div class="card" onclick="toggleSection('about')">
       <h2>About</h2>
@@ -53,23 +54,52 @@
     </div>
   </div>
 
-  <!-- About Section -->
   <div id="about" class="info-section">
     <h2>About Me</h2>
     <p>Hi, I’m Vaishali Rajvaidya, a creative frontend web developer with skills in HTML, CSS (TailwindCSS), JavaScript, React. I hold a Master’s in CS and love building seamless user experiences. I thrive in dynamic environments and am passionate about learning and growing.</p>
   </div>
 
-  <!-- Project Section -->
   <div id="projects" class="info-section">
     <h2>Projects</h2>
     <div class="project-gallery">
-      <img src="pro-images/Screenshot 2025-02-10 140044.png" alt="Project 1"/>
-      <img src="pro-images/Screenshot 2025-02-10 140231.png" alt="Project 2"/>
-      <img src="pro-images/Screenshot 2025-02-10 140506.png" alt="Project 3"/>
+      <img src="pro-images/Screenshot1.png" alt="Project 1"/>
+      <img src="pro-images/Screenshot2.png" alt="Project 2"/>
+      <img src="pro-images/Screenshot3.png" alt="Project 3"/>
     </div>
   </div>
 
-  <!-- Contact Section -->
+  <div id="skills" class="info-section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js, TailwindCSS, GSAP</li>
+      <li><strong>Backend:</strong> PHP, .NET, Apache</li>
+      <li><strong>Databases:</strong> SQL Server, MS Access</li>
+      <li><strong>Tools:</strong> Git, Vercel, GitHub</li>
+    </ul>
+  </div>
+
+  <div id="experience" class="info-section">
+    <h2>Experience</h2>
+    <p><strong>NIIT – Trainee Web Developer</strong><br>
+      Worked on PHP-based web applications and contributed to a Railway Reservation System using Visual Basic on .NET.
+    </p>
+  </div>
+
+  <div id="resume" class="info-section">
+    <h2>Education & Certifications</h2>
+    <ul>
+      <li><strong>M.Sc. in Computer Science</strong> – Bhopal University (2011–2013)</li>
+      <li><strong>B.C.A.</strong> – Bhopal University (2009–2011)</li>
+      <li><strong>Certifications:</strong> C, C++, JavaScript (Udemy), PHP, SQL</li>
+    </ul>
+    <h3>Strengths</h3>
+    <ul>
+      <li>Self-motivated and hardworking</li>
+      <li>Team player and quick learner</li>
+      <li>Keen interest in UI/UX design and development</li>
+    </ul>
+  </div>
+
   <div id="contact" class="info-section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:vaishali.rajvaidya13@gmail.com">vaishali.rajvaidya13@gmail.com</a></p>
