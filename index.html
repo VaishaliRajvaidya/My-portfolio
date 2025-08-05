@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishali Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BQSzP7mdIVc88DnsmXQlQCM8oDAB2h0Y8Q&s" alt="Logo" class="nav-image"/>
+        <h1 class="brand-name">Vaishali</h1>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="resume/VaishaliRajvaidya.pdf" class="resume" download>Download Resume</a>
+      </div>
+      <div class="menu-toggle" id="menuToggle"><i class="ri-menu-line"></i></div>
+    </nav>
+  </header>
+
+  <div class="page1">
+    <!-- Updated Intro Section -->
+    <div class="intro-section">
+      <div class="profile-pic-container">
+        <img src="photo.jpg" class="profile-image" alt="Vaishali Rajvaidya Profile Picture"/>
+      </div>
+      <div class="intro-text">
+        <h1>Vaishali Rajvaidya</h1>
+        <p>Aspiring and Creative Frontend Web Developer</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Section -->
+  <div class="page2">
+    <div class="card" onclick="toggleSection('about')">
+      <h2>About</h2>
+      <p>Know more about me <i class="ri-arrow-right-line"></i></p>
+    </div>
+    <div class="card" onclick="toggleSection('projects')">
+      <h2>Projects</h2>
+      <p>See my work <i class="ri-arrow-right-line"></i></p>
+    </div>
+    <div class="card" onclick="toggleSection('contact')">
+      <h2>Contact</h2>
+      <p>Connect with me <i class="ri-arrow-right-line"></i></p>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about" class="info-section">
+    <h2>About Me</h2>
+    <p>Hi, I’m Vaishali Rajvaidya, a creative frontend web developer with skills in HTML, CSS (TailwindCSS), JavaScript, React. I hold a Master’s in CS and love building seamless user experiences. I thrive in dynamic environments and am passionate about learning and growing.</p>
+  </div>
+
+  <!-- Project Section -->
+  <div id="projects" class="info-section">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+      <img src="pro-images/Screenshot 2025-02-10 140044.png" alt="Project 1"/>
+      <img src="pro-images/Screenshot 2025-02-10 140231.png" alt="Project 2"/>
+      <img src="pro-images/Screenshot 2025-02-10 140506.png" alt="Project 3"/>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="info-section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:vaishali.rajvaidya13@gmail.com">vaishali.rajvaidya13@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/VaishaliRajvaidya" target="_blank">VaishaliRajvaidya</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishali-rajvaidya-537b5929b" target="_blank">Vaishali Rajvaidya</a></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
