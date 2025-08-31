@@ -8,106 +8,165 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
+
+  <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="nav-left">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1BQSzP7mdIVc88DnsmXQlQCM8oDAB2h0Y8Q&s" alt="Logo" class="nav-image"/>
+        
         <h1 class="brand-name">Vaishali</h1>
       </div>
-      <div class="nav-links" id="navLinks">
-        <a href="#about" onclick="toggleSection('about')">About</a>
-        <a href="#projects" onclick="toggleSection('projects')">Projects</a>
-        <a href="#skills" onclick="toggleSection('skills')">Skills</a>
-        <a href="#experience" onclick="toggleSection('experience')">Experience</a>
-        <a href="#resume" onclick="toggleSection('resume')">Resume</a>
-        <a href="#contact" onclick="toggleSection('contact')">Contact</a>
-        <a href="resume/VaishaliRajvaidya.pdf" class="resume" download>Download Resume</a>
-      </div>
       <div class="menu-toggle" id="menuToggle"><i class="ri-menu-line"></i></div>
-    </nav>
+
+<ul class="nav-links mobile-menu" id="mobileMenu">
+  <li><a href="#about">About</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#projects">My Work</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="resume/VaishaliRajvaidya.pdf" download class="resume-btn">Download Resume</a></li>
+</ul>
+
   </header>
 
-  <div class="page1">
-    <div class="intro-section">
+  <!-- Intro Section -->
+  <section class="intro">
+    <div class="intro-container">
       <div class="profile-pic-container">
-        <img src="photo.jpg" class="profile-image" alt="Vaishali Rajvaidya Profile Picture"/>
+        <img src="pro-images\pro img.png"  class="profile-image" />
       </div>
       <div class="intro-text">
         <h1>Vaishali Rajvaidya</h1>
-        <p>Aspiring and Creative Frontend Web Developer</p>
+        <p>Aspiring and Creative Frontend Developer passionate about building beautiful UIs and immersive experiences.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="page2">
-    <div class="card" onclick="toggleSection('about')">
-      <h2>About</h2>
-      <p>Know more about me <i class="ri-arrow-right-line"></i></p>
-    </div>
-    <div class="card" onclick="toggleSection('projects')">
-      <h2>Projects</h2>
-      <p>See my work <i class="ri-arrow-right-line"></i></p>
-    </div>
-    <div class="card" onclick="toggleSection('contact')">
-      <h2>Contact</h2>
-      <p>Connect with me <i class="ri-arrow-right-line"></i></p>
-    </div>
-  </div>
-
-  <div id="about" class="info-section">
+  <!-- About -->
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>Hi, I’m Vaishali Rajvaidya, a creative frontend web developer with skills in HTML, CSS (TailwindCSS), JavaScript, React. I hold a Master’s in CS and love building seamless user experiences. I thrive in dynamic environments and am passionate about learning and growing.</p>
-  </div>
+    <p>I am a frontend developer with a strong grip on HTML, CSS, JavaScript, React, and GSAP. With a creative mindset and eye for detail, I craft responsive, animated, and engaging web experiences. My goal is to continuously grow while building visually stunning products that provide great user experiences.</p>
+  </section>
 
-  <div id="projects" class="info-section">
-    <h2>Projects</h2>
-    <div class="project-gallery">
-      <img src="pro-images/Screenshot1.png" alt="Project 1"/>
-      <img src="pro-images/Screenshot2.png" alt="Project 2"/>
-      <img src="pro-images/Screenshot3.png" alt="Project 3"/>
-    </div>
-  </div>
-
-  <div id="skills" class="info-section">
-    <h2>Technical Skills</h2>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
     <ul>
-      <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js, TailwindCSS, GSAP</li>
-      <li><strong>Backend:</strong> PHP, .NET, Apache</li>
-      <li><strong>Databases:</strong> SQL Server, MS Access</li>
-      <li><strong>Tools:</strong> Git, Vercel, GitHub</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, jQuery ,Redux</li>
+      <li><strong>Animations:</strong> GSAP, ScrollTrigger</li>
+      <li><strong>Backend:</strong> PHP, .NET, Apache Server</li>
+      <li><strong>Database:</strong> SQL Server, MS Access</li>
+      <li><strong>Tools:</strong> GitHub, Vercel, VS Code, Canva</li>
     </ul>
-  </div>
+  </section>
 
-  <div id="experience" class="info-section">
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>My Work</h2>
+
+    <div class="project">
+      <img src="pro-images/todo image.png" alt="ToDo App"/>
+      <div class="project-desc">
+        <h3>To-Do List Web App</h3>
+        <p>Manage daily tasks with a clean interface and dynamic JS functionality.</p>
+        <a href="https://vaishalirajvaidya.github.io/todo-js/" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <video src="pro-images/Recording 2025-08-30 171230.mp4" alt="Whack-a-Mole" controls autoplay muted ></video>
+      <div class="project-desc">
+        <h3>Whack-a-Mole Game</h3>
+        <p>Fun game with real-time scoring and simple JavaScript logic.</p>
+        <a href="https://vaishalirajvaidya.github.io/mole-game/" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="pro-images/Screenshot 2025-02-10 140506.png" alt="Boutique"/>
+      <div class="project-desc">
+        <h3>Nice at Noon Boutique</h3>
+        <p>GSAP-powered animated product website with smooth transitions.</p>
+        <a href="https://vaishalirajvaidya.github.io/boutique-nicenoon/" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+
+    <div class="project">
+      <img src="pro-images/travel.jpg" alt="Travel Planner"/>
+      <div class="project-desc">
+        <h3>Travel Planner App</h3>
+        <p>Plan itineraries, manage checklists, and book services. Built using React & GSAP.</p>
+        <a href="https://travel-planner-app-k625.vercel.app/" target="_blank">Live Demo</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
     <h2>Experience</h2>
-    <p><strong>NIIT – Trainee Web Developer</strong><br>
-      Worked on PHP-based web applications and contributed to a Railway Reservation System using Visual Basic on .NET.
+    <h3>NIIT – Trainee Web Developer</h3>
+    <ul>
+      <li>Built real-world web projects using PHP and Apache.</li>
+      <li>Developed Railway Reservation System in VB.NET.</li>
+      <li>Participated in team-based development with version control and UI testing.</li>
+    </ul>
+  </section>
+
+
+  <!-- Contact -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div id="contact-me" class="contact-me">
+   <div class="contact-info">
+    <p>Email: <a href="mailto:vaishali.rajvaidya13@gmail.com">vaishali.rajvaidya13@gmail.com</a></p>
+    <p>Phone: +91 8815003860</p>
+    <p>
+      <a href="https://github.com/VaishaliRajvaidya" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/vaishali-rajvaidya-537b5929b" target="_blank">LinkedIn</a>
     </p>
   </div>
-
-  <div id="resume" class="info-section">
-    <h2>Education & Certifications</h2>
-    <ul>
-      <li><strong>M.Sc. in Computer Science</strong> – Bhopal University (2011–2013)</li>
-      <li><strong>B.C.A.</strong> – Bhopal University (2009–2011)</li>
-      <li><strong>Certifications:</strong> C, C++, JavaScript (Udemy), PHP, SQL</li>
-    </ul>
-    <h3>Strengths</h3>
-    <ul>
-      <li>Self-motivated and hardworking</li>
-      <li>Team player and quick learner</li>
-      <li>Keen interest in UI/UX design and development</li>
-    </ul>
+  <div class="contact-form-container">
+    <form class="contact-form" id="contact-form">
+      <h1 class="heading">Contact Form</h1>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
   </div>
 
-  <div id="contact" class="info-section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:vaishali.rajvaidya13@gmail.com">vaishali.rajvaidya13@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/VaishaliRajvaidya" target="_blank">VaishaliRajvaidya</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vaishali-rajvaidya-537b5929b" target="_blank">Vaishali Rajvaidya</a></p>
-  </div>
+ 
+</section>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Vaishali Rajvaidya. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("vsuxRfJ9SoqujuHNI");
+  })();
+
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_o58uvnb', 'template_y3w0cmv', this)
+      .then(() => {
+        alert('Message sent successfully!');
+        e.target.reset();
+
+      }, (error) => {
+        alert('Failed to send message: ' + JSON.stringify(error));
+      });
+  });
+</script>
+
 </body>
 </html>
