@@ -15,7 +15,7 @@ gsap.from(".intro-text p", {
 });
 
 gsap.from(".profile-image", {
-  scale: 0,
+  y: 100,
   opacity: 0,
   duration: 1,
   delay: 1,

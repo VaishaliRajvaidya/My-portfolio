@@ -436,7 +436,7 @@ footer {
 
   .contact-form {
     min-width: unset;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-right: 1rem;
     width: 100% ;
     height: auto;
@@ -460,13 +460,20 @@ footer {
 
   .contact-info {
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 0;
-    padding: 1rem;
-    padding-left: 0;
+   padding-left: 0;
+   align-items: left;
+   justify-content: left;
 
   }
-
+  .contact-info .email {
+    margin: 1rem 0;
+    padding-left: 0.5rem;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+  }
 
   .nav-links {
     display: none;
