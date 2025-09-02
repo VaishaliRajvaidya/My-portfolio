@@ -422,7 +422,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  width: 100%;
+  max-width: 100%;
+  width: 100vw;
   margin: auto;
 
   }
@@ -438,7 +439,8 @@ footer {
     min-width: unset;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 100% ;
+    max-width: 100% ;
+    
     height: auto;
   
     
@@ -449,7 +451,7 @@ footer {
     margin: 1rem ;
     min-width: unset;
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     margin: 1rem 0;
   }
 
