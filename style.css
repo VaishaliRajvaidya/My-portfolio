@@ -99,10 +99,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 300px;
+  gap: 20rem;
   margin: 8px;
   flex-wrap: wrap;
   width: 98vw;
+  max-width: 100%;
 }
 .profile-pic-container {
   width: 100%;
@@ -111,7 +112,8 @@ header {
   border-radius: 50%;
   margin-left: 40px;
   object-fit: cover;
-  padding: 1rem;
+  padding: 0.5rem;
+
   /* border: 4px solid #00 Bright Blue */
 }
 .profile-image {
@@ -123,9 +125,11 @@ header {
   border: 4px solid #00c9ff; /* Bright Blue */
 }
 .intro-text {
-  max-width: 800px;
   text-align: left;
   color: #fff;
+  height: auto;
+  min-width: unset;
+  min-height: unset;
 }
 .intro-text h1 {
   font-size: 3.5rem;
@@ -137,7 +141,7 @@ header {
 
 .intro-text p {
   font-size: 1.6rem;
-  margin-top: 0.9rem;
+  margin-top: 0;
   max-width: 500px;
 }
 
@@ -338,27 +342,31 @@ footer {
   }
 
   .intro-container {
-    
+     
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 1rem;
-    margin: 2px;
+    margin-left: 2px;
     padding-left: 0;
+    gap:1rem;
   }
   .intro-text
    {
-     padding:1rem;
+     padding:0;
+     justify-self: unset;
      text-align: center;
-     margin: auto;
+     margin-top: 0.5rem; 
+     padding-top: 0;
+     align-items: start;
+
      }
 
      .profile-pic-container {
   min-width: unset;
-  max-width: 350px;
-  height: auto;
-  border-radius: 50%;
-  margin-left: 20px;
+  max-width: 380px;
+ border-radius: 50%;
+  margin-left: 0px;
   object-fit: cover;
   padding: 1rem;
   padding-left: 0.5rem;
