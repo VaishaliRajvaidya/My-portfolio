@@ -7,7 +7,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f2027, #2c5364); /* Indigo-Teal Gradient */
+  background: linear-gradient(135deg, #1c323c, #2c5364); /* Indigo-Teal Gradient */
   color: #fff;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -431,6 +431,7 @@ footer {
     top: 1rem;
   }
   #contact {
+    
   min-width: unset;
   display: flex;
   flex-direction: column;
